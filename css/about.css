@@ -1,0 +1,83 @@
+/* margin: 0 auto; 로 가운데 위치시키기 */
+.inner {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.profile {
+    max-width: 700px;
+}
+
+.profile-warp h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 100;
+    /* text-transform: capitalize; 각 문자를 대문자로 바꿈 */
+    text-transform: capitalize;
+}
+
+/* 프로필 타이틀부분에 밑줄주기 */
+.profile-warp h2::after {
+    content: '';
+    display: block;
+    position: relative;
+    /* 프로필 타이틀과의 거리(top), 길이(width), 굵기(height) */
+    top: 10px;
+    width: 30px;
+    height: 1px;
+    background: #333;
+}
+
+/* 자식 선택자(>) 사용 해당 부분만 효과주기 */
+.profile-warp > h3 {
+    font-size: 50px;
+    color: #db3236;
+    /* text-transform: uppercase; 대문자로 변경 */
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0 10px -4px;
+}
+
+/* 자식 선택자(>) 사용 해당 부분만 효과주기 */
+.profile-warp > span {
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.inner .profile {
+    margin-top: 40px;
+}
+
+/* 자식 선택자(>) 사용 해당 부분만 효과주기 */
+.profile > h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.clfix {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.profile-warp dt {
+    float: left;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.clfix:after {
+    content: "";
+    display: block;
+    /* clear:both 오른쪽 왼쪽 둘다 float 값 취소 */
+    clear: both;
+    /* visibility: hidden; 숨기지만 영역은 차지 */
+    visibility: hidden;
+}
+
+/* 590px 때 메시지 보내기 없애기 */
+@media screen and (max-width: 590px) {
+    .sidebar-contact {
+        display: none;
+    }
+}

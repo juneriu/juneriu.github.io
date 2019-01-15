@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 웹 위한 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- meta 태그 정리 -->
+    <meta name="author" content="Jihoon Ahn">
+    <meta name="keywords" content="Web Portfolio Page">
+    <meta name="description" content="Jihoon Ahn's Portfolio Page">
+
+    <!-- index.css 적용 -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <!-- portfolio.css 적용 -->
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <!-- skill.css 적용 -->
+    <link rel="stylesheet" href="css/skill.css" type="text/css">
+    <!-- contact.css 적용 -->
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+
+    <!-- fontawsome cdn 사용 및 jquery 사용 위해 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- Bootstrap section 부분 사용 위해 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 애니메이션 효과 사용 위한 -->
+    <link rel="stylesheet" href="css/Animate.css">
+
+    <title>Developer :: Jihoon Ahn</title>
+</head>
+
+<body>
+    <!-- 상단 배너 header 부분 -->
+    <header class="up_header_banner">
+        <div class="header_left_banner">
+            <a href="index.html">
+                <h3>ㅇㅈㅎ</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- 상단 nav 부분 -->
+    <nav class="up_nav">
+        <div class="nav_right_menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfoilo</li>
+                </a>
+                <a href="skill2.html">
+                    <li>Skill</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 본문 section 과 article 부분 -->
+    <section class="desc_portfolio_section">
+        <article class="google_map_address">
+            <div class="container-fluid">
+                <h1 class="text-center">Contact Me</h1>
+                <hr>
+                <!-- 구글 지도 연동 부분 -->
+                <div class="row">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4475.965390484594!2d127.1237816154101!3d37.50826061066268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca57df92f32dd%3A0xc0cf0000f33e3e7c!2z67Cp7J207JetKDXtmLjshKAp!5e0!3m2!1sko!2skr!4v1540185040827" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+
+        <article class="call_about_me">
+            <!-- bounce 애니메이션 효과 주기 -->
+            <!-- container1 div에 3개의 box div 생성하여
+                 각각 아이콘 설정 -->
+            <div class="animated bounce delay-.1s container1">
+                <div class="box" title="위치" alt="위치">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class='details'>
+                        <h3 id="call1">Seoul-Songpa</h3>
+                    </div>
+                </div>
+
+                <div class="box" title="연락처" alt="연락처">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class='details'>
+                        <h3 id="call2">010-2797-3685</h3>
+                    </div>
+                </div>
+
+                <div class="box" title="이메일" alt="이메">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class='details'>
+                        <h3 id="call3">gram920518@naver.com</h3>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="social_media">
+            <!-- bounce 애니메이션 효과 주기 -->
+            <!-- social_div 안에 li와 fontawesome 통해 
+                 sns 아이콘 설정 -->
+            <div class="animated bounce delay-.1s social_div" id="social_div_id">
+                <ul>
+                    <li><a href="https://www.facebook.com/juneriu2" title="페이스북 페이지" alt="페이스북 페이지"><span></span></a></li>
+                    <li><a href="https://blog.naver.com/gram920518" title="네이버 블로그" alt="네이버 블로그"><span></span></a></li>
+                    <li><a href="https://riucc.tistory.com" title="티스토리 블로그" alt="티스토리 블로그"><span></span></a></li>
+                    <li><a href="https://github.com/juneriu" title="깃허브 페이지" alt="깃허브 페이지"><span></span></a></li>
+                </ul>
+
+            </div>
+        </article>
+    </section>
+
+
+    <!-- footer 부분 css 부분 -->
+    <footer class="desc_footer">
+        Copyright &copy; My Website 2019
+    </footer>
+
+    <!-- 좌측 메시지 보내기 부분  -->
+    <div class="sidebar-contact" title="메시지 보내기">
+        <div class="toggle"></div>
+
+        <h2>메시지 보내기</h2>
+        <form>
+            <input type="text" name="name" placeholder="이름">
+            <input type="email" name="email" placeholder="메일 주소">
+            <input type="rel" name="phone" placeholder="연락처">
+            <textarea placeholder="내용" name="desc"></textarea>
+            <input type="submit" name="" value="전송하기">
+        </form>
+    </div>
+
+    <!-- 좌측 메시지 보내기 부분 Jquery
+         자바스크립트의 onload 같은 기능
+         html 페이지가 화면에 뿌려지고 나서
+         ready()안에 적은 이벤트들이 동작준비를 하는 것
+         .으로 div에 접근하여 click 이벤트 주고
+         toggleClass 사용하여 반복 클릭 시 스위치 효과를 줌 -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('.sidebar-contact').toggleClass('active')
+                $('.toggle').toggleClass('active')
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

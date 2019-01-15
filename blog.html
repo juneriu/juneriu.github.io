@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 웹 위한 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- meta 태그 정리 -->
+    <meta name="author" content="Jihoon Ahn">
+    <meta name="keywords" content="Web Portfolio Page">
+    <meta name="description" content="Jihoon Ahn's Portfolio Page">
+
+    <!-- index.css 적용(header, nav) -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <!-- portfolio.css (footer) 적용 -->
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <!-- blog.css 적용 -->
+    <link rel="stylesheet" href="css/blog.css" type="text/css">
+
+    <!-- fontawsome cdn 사용 및 jquery 사용 위해 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- owl carousel 사용하기 위해 -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- 애니메이션 효과 사용 위한 -->
+    <link rel="stylesheet" href="css/Animate.css">
+
+    <!-- 맨위로 화살표 아이콘 사용하기 위해 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+    <!-- 아울캐러셀(멀티플) 로드부분 -->
+    <style>
+        .owl-carousel.owl-loaded {
+	        display: inline-block;
+        }
+        .img-wrap {
+	        height: 200px;
+            width: 250px;
+        } 
+        
+    </style>
+
+    <title>Developer :: Jihoon Ahn</title>
+</head>
+
+<body>
+    <!-- 상단 배너 header 부분 -->
+    <header class="up_header_banner">
+        <div class="header_left_banner">
+            <a href="index.html">
+                <h3>ㅇㅈㅎ</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- 상단 nav 부분 -->
+    <nav class="up_nav">
+        <div class="nav_right_menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfoilo</li>
+                </a>
+                <a href="skill2.html">
+                    <li>Skill</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 본문 section 과 article 부분 -->
+    <section class="desc_portfolio_section">
+
+        <article class="protfolio_title">
+            <h2 class="lat_title">My Blog</h2>
+        </article>
+
+        <!-- owlCarousel(멀티플 캐러셀) 부분 -->
+        <article class="owlCarousel">
+            <!-- 실제 출력되는 부분과 각각 출력되는 item 들 -->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="http://riucc.tistory.com/501?category=755671"><img src="img/blog/blog_1.png" width="300px;" height="200px;" alt="아이폰 게시물 사진" title="아이폰 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/196?category=685699"><img src="img/blog/blog_2.jpg" width="300px;" height="200px;" alt="라즈베리파이 게시물 사진" title="라즈베리파이 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/298?category=717203"><img src="img/blog/blog_3.png" width="300px;" height="200px;" alt="AWS 게시물 사진" title="AWS 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/491?category=754793"><img src="img/blog/blog_4.png" width="300px;" height="200px;" alt="NodeJS 게시물 사진" title="NodeJS 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/369?category=676969"><img src="img/blog/blog_5.png" width="300px;" height="200px;" alt="공공데이터 게시물 사진" title="공공데이터 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/493?category=754793"><img src="img/blog/blog_6.png" width="300px;" height="200px;" alt="NodeJS 게시물 사진" title="NodeJS 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/59?category=677015"><img src="img/blog/blog_7.png" width="300px;" height="200px;" alt="C 게시물 사진" title="C 게시물"></a>
+                </div>
+                <div class="item">
+                    <a href="http://riucc.tistory.com/206?category=677069"><img src="img/blog/blog_8.png" width="300px;" height="200px;" alt="소켓 게시물 사진" title="소켓 게시물"></a>
+                </div>
+            </div>
+
+        </article>
+
+
+
+        <article class="animated fadeIn delay-.1s blog_1">
+            <div class="notice_blog"><span>※ 블로그 링크페이지가 반응형이 아닙니다(원할한 접속을 위해서는 PC로 접속하세요)</span></div>
+            <div class="lt_wr1">
+                <div class="lat">
+                    <h2 class="lat_title"><a href="http://riucc.tistory.com/category/Javscript%26NodeJS">Javscript&NodeJS</a></h2>
+                    <ul>
+                        <li>
+                            <a href="http://riucc.tistory.com/503?category=754793" title="상세페이지 구현위한 Express Route Parameters"> <span>상세페이지 구현위한 Express Route Parameters</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">01:20</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/502?category=754793" title="pm2 설치하여 서버가 죽지 않고 계속 유지시키기"> <span>pm2 설치하여 서버가 죽지 않고 계속 유지시키기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">17:02</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/496?category=754793" title="Supervisor 설치하여 코드 변경 시 자동으로 서버를 리로드"> <span>Supervisor 설치하여 코드 변경 시 서버를 리로드</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">03:11</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/495?category=754793" title="Express, POST 방식을 이용한 form 데이터 전달"> <span>Express, POST 방식을 이용한 form 데이터 전달</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">17:08</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/494?category=754793" title="Express, GET 방식을 이용한 form 데이터 전달"> <span>Express, GET 방식을 이용한 form 데이터 전달</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">16:48</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lt_wr2">
+                <div class="lat">
+                    <h2 class="lat_title"><a href="http://riucc.tistory.com/category/%EC%95%84%EC%9D%B4%ED%8F%B0">아이폰</a></h2>
+                    <ul>
+                        <li>
+                            <a href="http://riucc.tistory.com/501?category=755671" title="배열과 UIButton 사용하기 예제"> <span>배열과 UIButton 사용하기 예제</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">15:45</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/500?category=755671" title="위젯 : UIButton, UISwitch, UIImageView 사용하기"> <span>위젯 : UIButton, UISwitch, UIImageView 사용하기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">15:32</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/499?category=755671" title="뷰 컨트롤러에서 효과주기(폰트, 정렬 등)"> <span>뷰 컨트롤러에서 효과주기(폰트, 정렬 등)</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">15:17</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/498?category=755671" title="스위프트 상속과 오버라이딩"> <span>스위프트 상속과 오버라이딩</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">15:00</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/497?category=755671" title="스위프트 클래스(Class) 생성 및 초기화"> <span>스위프트 클래스(Class) 생성 및 초기화</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">14:43</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="animated fadeIn delay-.1s blog_2">
+            <div class="lt_wr1">
+                <div class="lat">
+                    <h2 class="lat_title"><a href="http://riucc.tistory.com/category/JSP">JSP</a></h2>
+                    <ul>
+                        <li>
+                            <a href="http://riucc.tistory.com/403?category=677189" title="MultipartRequest 이용한 파일 업로드(cos.jar)"> <span>MultipartRequest 이용한 파일 업로드(cos.jar)</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">12:23</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/371?category=677189" title="페이스북, 트위터, 카카오, 네이버 게시물 공유하기"> <span>페이스북, 트위터, 카카오, 네이버 게시물 공유하기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">12:51</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/342?category=677189" title="div class, span class, 크롬 개발자도구(F12)"> <span>div class, span class, 크롬 개발자도구(F12)</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">14:02</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/340?category=677189" title="now(), 시간 데이터를 오전 오후 나누고 이쁘게 출력하기"> <span>now(), 시간 데이터를 오전 오후 나누고 출력하기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">01:32</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/341?category=677189" title="Auto Increment DB SQL 처리방법"> <span>Auto Increment DB SQL 처리방법</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">13:42</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lt_wr2">
+                <div class="lat">
+                    <h2 class="lat_title"><a href="http://riucc.tistory.com/category/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C">안드로이드</a></h2>
+                    <ul>
+                        <li>
+                            <a href="http://riucc.tistory.com/395?category=676969" title="생명주기에 맞게 개발하기"> <span>생명주기에 맞게 개발하기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">17:28</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/387?category=676969" title="WebView 를 이용해 사이트 가져오기"> <span>WebView 를 이용해 사이트 가져오기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">12:33</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/385?category=676969" title="Mapbox API 이용해 지도 및 길찾기 구현하기"> <span>Mapbox API 이용해 지도 및 길찾기 구현하기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">13:40</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/376?category=676969" title="picasso로 이미지 URL 쉽게 ImageView에 띄워주기"> <span>picasso로 이미지 URL 쉽게 ImageView에 띄워주기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">21:24</span>
+                        </li>
+                        <li>
+                            <a href="http://riucc.tistory.com/370?category=676969" title="CardView 에 FadeIn 애니메이션 효과주기"> <span>CardView 에 FadeIn 애니메이션 효과주기</span></a> <span><img src="img/blog/new.PNG" border="0"></span>
+                            <span class="lt_date">02:51</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+    <!-- 하단 footer 부분 -->
+    <footer class="desc_footer">
+        Copyright &copy; My Website 2019
+    </footer>
+
+
+    <!-- 클릭 시 맨위로 보내는 아이콘 부분
+         반응형에서만 나타나게 설정하기 -->
+    <a style="display:scroll;position:fixed;bottom:20px;right:20px; font-size: 40px;" href="#" class="gototop"><i class="fas fa-arrow-alt-circle-up"></i></a>
+
+
+    <!-- owl-carousel 부분 JS -->
+    <script type="text/javascript">
+        // div owl-carousel 가져와서 이벤트 처리
+        $('.owl-carousel').owlCarousel({
+            items: 5, // 5개 표시
+            nav: false, // nav, dots 옵션꺼서 안보이게
+            dots: false,
+            margin: 10, // 사진간 간격 
+            autoplay: true, // 자동플레이 1초씩, 마우스 대면 멈추기
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            loop: true, // 루프
+            mouseDrag: true, // 드래그 가능
+            responsiveClass: true, // 반응형 구간
+            responsive: {
+                // 0~590까지 2개 띄우기
+                0: {
+                    items: 2
+                },
+                // 480~798px까지 3개를 띄우고 799px부터 5개 이미지 띄움 
+                591: {
+                    items: 3
+                },
+                799: {
+                    items: 5
+                }
+            }
+        });
+    </script>
+
+    <!-- 스크롤하여 밑으로 어느정도 내려갔을대 사라지고 나타나는 효과 -->
+    <!-- this.scrollTop 로 스크롤바 위치를 가져와서 300보다 크면 나타나게
+         아니면 사라지게 맨위로 버튼에 효과를 준다 -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('.gototop').fadeIn();
+            } else {
+                $('.gototop').fadeOut();
+            }
+        });
+    </script>
+
+    <!-- 맨위로 버튼을 눌렀을 때, html body 쪽으로(맨위로) 
+         스르르 올라가도록 애니메이션 효과를 준다 -->
+    <script>
+        $('.gototop').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    </script>
+
+
+</body>
+
+</html>

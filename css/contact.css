@@ -1,0 +1,311 @@
+/* ----- 연락처 부분 3개 아이콘 부분  ----- */
+
+.container1 {
+    /* 전체크기 1200px 잡고, 마진 상단 100px, 가운데 정렬 */
+    width: 1200px;
+    margin: 100px auto 0;
+    /* display: flex 사용하여 가용한 공간에서의 위치 설정 */
+    display: flex;
+}
+
+/* 연락처 부분 1개 아이콘 박스에 대한 설정 */
+.container1 .box {
+    position: relative;
+    /* 크기 설정, 가운데 정렬, 그림자, 박스 둥굴게, 마진 등 설정 */
+    width: 400px;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+    background: #00171d;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px rgba(0, 7, 10, 1);
+}
+
+/* 아이콘에 해당하는 박스 배경색, 0.5초의 트렌지션 설정 */
+.container1 .box .icon {
+    width: 100%;
+    height: 100%;
+    background: #00171d;
+    transition: 0.5s;
+}
+
+/* 아이콘 부분 글자크기와 글자 위치, 색 지정 */
+/* 1em의 경우 16px */
+.container1 .box .icon .fa {
+    font-size: 4em;
+    line-height: 100px;
+    color: #eece1a;
+}
+
+/* 박스 1개 부분 hover 효과 사용
+   transform : scale(0) 써서 안으로 쪼그라들게 */
+.container1 .box:hover .icon {
+    transform: scale(0);
+}
+
+/* 박스 1개에서 보여질 텍스트 화면 */
+.container1 .box .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 똑같이 트렌지션 0.5초 설정과
+       2배 크기로 설정, 투명도 0과 배경색 지정 */
+    background: #03a9f4;
+    transition: 0.5s;
+    transform: scale(2);
+    opacity: 0;
+}
+
+/* 박스 1개 보여질 텍스트 화면 hover 부분 */
+.container1 .box:hover .details {
+    /* 투명도 1과 1배 확대 설정 */
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* 박스 1개 보여질 텍스트 부분 */
+.container1 .box .details h3 {
+    /* 출력될 글자 위치와 글자 크기, 색 설정 */
+    margin: 0;
+    padding: 0;
+    line-height: 100px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* nth-child(2) 써서 2번째 부분에 다른 효과 주기(배경색) */
+.container1 .box:nth-child(2) .details {
+    background: #e91e63;
+}
+
+/* nth-child(3) 써서 3번째 부분에 다른 효과 주기(배경색) */
+.container1 .box:nth-child(3) .details {
+    background: #399f35;
+}
+
+/* ----- social sns 아이콘 부분 ----- */
+
+/* sns부분 통체 div 부분 */
+.social_div {
+    width: 100%;
+    margin-top: 50px;
+    /* flex로 둬서 남은 공간만큼 정렬되게 */
+    display: -webkit-flex;
+    display: flex;
+    /* div 가운데 정렬하기 위해서 */
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#social_div_id ul {
+    /* ul 부분 flex로 둬서 남은 공간만큼 정렬되게 */
+    display: flex;
+}
+
+#social_div_id ul li {
+    /* 각 아이콘부분 마진값과 li 사용시 마커 없애기 */
+    position: relative;
+    list-style: none;
+    margin: 0 5px;
+}
+
+/* sns 박스 부분 밑에 그림자 넣기 */
+#social_div_id ul li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 80px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    transition: 0.5s;
+    /* 투명도 0 우선 안보이게 */
+    opacity: 0;
+    /* 번지는 효과랑 0.8배 확대 효과 */
+    filter: blur(2px);
+    transform: scale(0.8);
+}
+
+#social_div_id ul li:hover:before {
+    transition-delay: 0.2s;
+    opacity: 0.2;
+    transform: scale(1);
+}
+
+
+/* 아이콘 부분 색깔 지정하고 크기 지정 */
+#social_div_id ul li a {
+    width: 80px;
+    height: 80px;
+    display: block;
+    transition: 0.5s;
+    background: #ccc;
+}
+
+/* li 부분 hover 이벤트 시 translateY 써서 살짝 위로 10px 올리기 */
+#social_div_id ul li:hover a {
+    transform: translateY(-10px)
+}
+
+#social_div_id ul li a span {
+    width: 100%;
+    height: 100%;
+}
+
+/* 실제 출력되는 awesome font 이미지 */
+#social_div_id ul li a span:before {
+    font-family: fontAwesome;
+    /* 위치 조정 배경색, 글자색, 트렌지션 설정 */
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00171d;
+    color: #eece1a;
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+/* rotate로 시계방향으로 90도 회전시키고 y축 이동(전) */
+#social_div_id ul li:hover a span:before {
+    transform: rotateX(90deg) translateY(-50%);
+}
+
+/* rotate로 시계방향으로 90도 회전시키고 y축 이동(후) */
+#social_div_id ul li a span:after {
+    font-family: fontAwesome;
+    /* 텍스트 위치랑 중앙정렬 */
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 배경색 글자색 지정 */
+    background: #fff;
+    color: #fff;
+    transform-origin: bottom;
+    /* 시계방향 90도 회전 다시 -50인거 50으로 바꿔 원상복귀 */
+    transition: transform 0.5s;
+    transform: rotateX(90deg) translateY(50%);
+}
+
+/* rotate X축방향으로 0도 회전 */
+#social_div_id ul li:hover a span:after {
+    transform: rotateX(0deg) translateY(0);
+}
+
+/* font awesome 참고해 각 폰트 이미지 크기랑 이미지 설정 */
+/* 4개 이기에 각각 nth-child 써서 따로 설정 */
+#social_div_id ul li:nth-child(1) a span:before,
+#social_div_id ul li:nth-child(1) a span:after {
+    content: '\f09a';
+    font-size: 25px;
+}
+
+#social_div_id ul li:nth-child(2) a span:before,
+#social_div_id ul li:nth-child(2) a span:after {
+    content: '\f0e0';
+    font-size: 25px;
+}
+
+#social_div_id ul li:nth-child(3) a span:before,
+#social_div_id ul li:nth-child(3) a span:after {
+    content: '\f044';
+    font-size: 25px;
+}
+
+#social_div_id ul li:nth-child(4) a span:before,
+#social_div_id ul li:nth-child(4) a span:after {
+    content: '\f09b';
+    font-size: 25px;
+}
+
+/* font awesome 참고해 각 폰트 이미지 크기랑 이미지 설정 */
+/* 4개 이기에 각각 nth-child 써서 따로 설정한거
+   배경색 변경 */
+#social_div_id ul li:nth-child(1) a span:after {
+    background: #3b5999;
+}
+
+#social_div_id ul li:nth-child(2) a span:after {
+    background: #00c63b;
+}
+
+#social_div_id ul li:nth-child(3) a span:after {
+    background: #dd4b39;
+}
+
+#social_div_id ul li:nth-child(4) a span:after {
+    background: #5e227f;
+}
+
+/* ----------------- 반응형 부분 CSS ---------------- */
+
+@media screen and (max-width: 798px) {
+
+    /* div와 크기 및 마진 설정 */
+    .container1 {
+        width: 760px;
+        margin: 70px auto 0;
+    }
+
+    /* div 내부 박스크기 및 마진 설정 */
+    .container1 .box {
+        width: 220px;
+        margin: 0 20px;
+    }
+
+    /* 박스내부 폰트 조절 */
+    .container1 .box .details h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* 주소부분과 전화번호쪽은 글자크기 크게 */
+    #call1,
+    #call2 {
+        font-size: 20px;
+    }
+
+    /* 소셜쪽 마진 설정 */
+    #social_div_id ul li {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    /* div와 크기 및 마진 설정 */
+    .container1 {
+        width: 590px;
+        margin: 70px auto 0;
+    }
+
+    /* div 내부 박스크기 및 마진 설정 */
+    .container1 .box {
+        width: 220px;
+        margin: 0 20px;
+    }
+
+    /* 메일주소 부분 작게 */
+    #call3 {
+        font-size: 13px;
+    }
+
+    /* 소셜쪽 마진 설정 */
+    #social_div_id ul li {
+        margin: 0 20px;
+    }
+}

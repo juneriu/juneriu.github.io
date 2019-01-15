@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- 반응형 웹 위한 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- meta 태그 정리 -->
+    <meta name="author" content="Jihoon Ahn">
+    <meta name="keywords" content="Web Portfolio Page">
+    <meta name="description" content="Jihoon Ahn's Portfolio Page">
+
+    <!-- index.css 적용 -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <!-- portfolio.css 적용 -->
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <!-- skill.css 적용 -->
+    <link rel="stylesheet" href="css/skill.css" type="text/css">
+    <!-- about.css 적용 -->
+    <link rel="stylesheet" href="css/about.css" type="text/css">
+
+    <!-- fontawsome cdn 사용 및 jquery 사용 위해 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- 애니메이션 효과 사용 위한 -->
+    <link rel="stylesheet" href="css/Animate.css">
+
+    <title>Developer :: Jihoon Ahn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <style>
+        .header_left_banner {
+            width: 20%;
+            margin-top: 25px;
+            float: left;
+            line-height: 100px;
+            max-height: 100px;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+    <!-- 상단 배너 header 부분 -->
+    <header class="up_header_banner">
+        <div class="header_left_banner">
+            <a href="index.html">
+                <h3>ㅇㅈㅎ</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- 상단 nav 부분 -->
+    <nav class="up_nav">
+        <div class="nav_right_menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfoilo</li>
+                </a>
+                <a href="skill2.html">
+                    <li>Skill</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="" id="mainNav"></nav>
+
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/nodejs/nodejs5.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/blockchain/blockchain2.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/android-ecus/android1.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/android-mise/android1.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/smartmirror/smartmirror0.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/socket/socket.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-7">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/bigdata/bigdata.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-8">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/project/2_jspsite.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-9">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/project/7_aws.PNG" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Nodejs - 나무야 미안해</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/nodejs/nodejs1.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/nodejs/nodejs2.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/nodejs/nodejs3.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/nodejs/nodejs4.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/nodejs/nodejs5.PNG" alt="">
+
+                        <p class="mb-5">간단한 설문을 기반으로 사용자의 취향을 추측하여 취향에 맞는 도서를 추천하고 소개해주는 플랫폼</p>
+
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Blockchain - Trick</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/blockchain/blockchain1.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/blockchain/blockchain2.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/blockchain/blockchain3.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/blockchain/blockchain4.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/blockchain/blockchain5.PNG" alt="">
+
+                        <p class="mb-5">블록체인 기술을 활용하여 맛집 컨츠 제공자와 참여자에게 보상을 하고 맛집 정보를 공유하는 플랫폼<br>
+                            맡은 역할 : 사이트 제작, AWS 연동, Web3.js</p>
+
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Android - ECUS</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-ecus/android2.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-ecus/android1.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-ecus/android3.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-ecus/android4.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-ecus/android6.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-ecus/android7.PNG" alt="">
+
+                        <p class="mb-5">서울시 관광 정보 제공 및 SNS 플랫폼</p>
+
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Android - 미세앓이</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-mise/android2.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-mise/android1.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-mise/android3.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-mise/android4.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/android-mise/android5.PNG" alt="">
+
+                        <p class="mb-5">대기환경 API를 활용한 실시간 대기환경 확인 및 대처 플랫폼</p>
+
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Smart Mirror</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/smartmirror/smartmirror1.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/smartmirror/smartmirror0.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/smartmirror/smartmirror2.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/smartmirror/smartmirror3.PNG" alt="">
+                        <img class="img-fluid mb-5" src="img/portfolio/smartmirror/smartmirror4.PNG" alt="">
+
+                        <p class="mb-5">음성인식 API와 다른 API들을 활용한 스마트 미러<br>
+                            맡은 역할 : Nodejs를 이용한 API 연동 및 구축</p>
+
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Socket - 채팅 프로그램</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/socket/socket.PNG" alt="">
+                        <p class="mb-5">리눅스에서 소켓 프로그래밍을 통해
+                            안드로이드와 윈도우(MFC)에서 접속가능한
+                            채팅 프로그램</p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">BIG DATA - Cloudera, MapR</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/portfolio/bigdata/bigdata.PNG" alt="">
+                        <p class="mb-5">Cloudera와 MapR을
+                            설치하고 공공데이터와 크롤링한 데이터를 통해
+                            내부 에코시스템들을 다루어보았다
+                        </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/project/2_jspsite.PNG" alt="">
+                        <p class="mb-5">Bootstrap과 JSP, Mysql를 이용하여
+                            쇼핑몰 사이트 제작 </p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 9 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-9">
+        <div class="portfolio-modal-dialog bg-white">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                <i class="fa fa-3x fa-times"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                        <hr class="star-dark mb-5">
+                        <img class="img-fluid mb-5" src="img/project/7_aws.PNG" alt="">
+                        <p class="mb-5">아마존 웹 서버에서 제공하는 EC2, RDS, EIP, S3 등
+다양한 기능들을 활용하여 서버 및 데이터베이스를 설계하였다</p>
+                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                            <i class="fa fa-close"></i>
+                            Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>

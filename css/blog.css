@@ -1,0 +1,222 @@
+/* ----- 아울캐러셀(멀티플 캐러셀) 부분 ----- */
+.owlCarousel {
+    /* 왼쪽 오른쪽에 패딩주고 아래에 마진값 설정 */
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 30px;
+}
+
+/* ----- article 1, 2부분 ----- */
+
+/* 게시물 출력해주는 article 1, 2 에도 
+   멀티플 캐러셀에 맞춰서 패딩 값 설정 */
+.blog_1 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.blog_2 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* 798px 아래에서만 보이는 문구 설정 
+   반응형에서만 출력되게 함 */
+.notice_blog {
+    display: none;
+}
+
+/* 게시물 박스 div */
+.lat {
+    position: relative;
+    /* 마진, 넘치는건 안보이게, 경계선, 배경 설정 */
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #c6cacc;
+    background: #fff;
+}
+
+/* 게시묿 박스 안의 타이틀 부분 전체 */
+.lat .lat_title {
+    /* block으로 잡아 1줄 차지, 패딩값, 글위치높이, 폰트, 아래밑줄 설정 */
+    display: block;
+    padding: 0 20px;
+    line-height: 35px;
+    font-size: 1.083em;
+    border-bottom: 1px solid #e2e2e2;
+    color: #253dbe;
+    background: #fcfcfc;
+}
+
+/* 게시묿 박스 안의 타이틀 부분 a 링크부분 */
+.lat .lat_title a {
+    /* 색상 설정, a링크 시 밑줄 안보이게 */
+    color: #5656fc;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+/* 게시물 박스 안의 타이틀 부분 밑에 밑줄 
+   after 가상 요소 사용 */
+.lat .lat_title a:after {
+    /* relative 와 absolute 이용 바로 밑 지정 */
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    /* 길이 100%로 글자 사이즈에 맞춰, 굵기는 2px */
+    width: 100%;
+    height: 2px;
+    background: #5656fc;
+    content: '';
+}
+
+.lat li {
+    list-style: none;
+    position: relative;
+    line-height: 18px;
+    padding: 3px 0;
+    padding-right: 50px;
+    padding-left: 10px;
+    position: relative;
+}
+
+/* 게시물 내용들 출력되는 부분 */
+.lat ul {
+    /* 패딩 값 상하좌우 설정 */
+    padding: 15px 20px;
+}
+
+/* 게시물 옆 동그라미 출력 부분 */
+.lat li:before {
+    position: absolute;
+    /* 위치 지정하고 색넣고 동그랗게 만들기 */
+    top: 12px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: #aaa;
+    content: '';
+    border-radius: 50%;
+}
+
+/* 게시물 내용물 a링크 부분 */
+.lat li a {
+    /* 글자색 넣고 a링크 밑줄 안보이게 */
+    color: #000;
+    text-decoration: none;
+}
+
+/* 게시물 내용 a링크 마우스 올릴 시 효과(hover) */
+.lat li a:hover {
+    /* 커서 포인트로 해서 마우스 모양생성, 빨간색 밑줄 생기게 함 */
+    color: #FF0000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* 게시물 내용 오른쪽 부분 날짜 출력 */
+.lat .lt_date {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    color: #888;
+}
+
+/* article 하나를 왼쪽과 오른쪽으로 45% 비율로 나누어 제작 */
+.lt_wr1 {
+    float: left;
+    width: 45%;
+}
+
+.lt_wr2 {
+    float: right;
+    width: 45%;
+}
+
+/* ----------------- 반응형 부분 CSS ---------------- */
+@media screen and (max-width: 798px) {
+
+    /* 멀티플 캐러셀 부분 패딩값 조절 */
+    .owlCarousel {
+        padding-left: 39px;
+        padding-right: 39px;
+        margin-bottom: 30px;
+    }
+
+    /* article 1, 2부분 패딩값 조절(캐러셀과 같게) */
+    .blog_1 {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
+    .blog_2 {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
+    /* 게시물 출력부분 div 높이 크기를 280px로 주어 작아져도 안깨지게 */
+    .lat {
+        height: 280px;
+    }
+
+    /* 블로그 링크가 반응형 아니기때매 공지 보여주는 부분
+       위에서 display:none 했던거 block 으로 보여주고
+       글자크기 색 굵기 등 설정 */
+    .notice_blog {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: red;
+        font-weight: bold;
+    }
+
+    /* article 하나를 왼쪽과 오른쪽으로 48% 비율로 나누어 제작 */
+    .lt_wr1 {
+        float: left;
+        width: 48%;
+    }
+
+    .lt_wr2 {
+        float: right;
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    /* 멀티플 캐러셀 부분 패딩값 조절 */
+    .owlCarousel {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* article 1, 2부분 패딩값 조절(캐러셀과 같게) */
+    .blog_1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .blog_2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* 게시물 출력부분 div 높이 크기를 180px로 주어 크기 조정 */
+    .lat {
+        height: 180px;
+    }
+
+    /* width 100% 처리하여 1칸씩 4칸이 출력되게 조정 */
+    .lt_wr1 {
+        float: left;
+        width: 100%;
+    }
+
+    .lt_wr2 {
+        float: right;
+        width: 100%;
+    }
+
+
+}
