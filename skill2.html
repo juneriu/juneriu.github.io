@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 웹 위한 뷰포트 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- meta 태그 정리 -->
+    <meta name="author" content="Jihoon Ahn">
+    <meta name="keywords" content="Web Portfolio Page">
+    <meta name="description" content="Jihoon Ahn's Portfolio Page">
+
+    <!-- index.css 적용 -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <!-- portfolio.css 적용 -->
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <!-- skill.css 적용 -->
+    <link rel="stylesheet" href="css/skill.css" type="text/css">
+
+    <!-- fontawsome cdn 사용 및 jquery 사용 위해 -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- 파이 차트 사용 위해 -->
+    <script src="js/jquery.easypiechart.js"></script>
+
+    <!-- 애니메이션 효과 사용 위한 -->
+    <link rel="stylesheet" href="css/Animate.css">
+
+    <!-- 맨위로 화살표 아이콘 사용하기 위해 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+    <title>Developer :: Jihoon Ahn</title>
+</head>
+
+<body>
+    <!-- 상단 배너 header 부분 -->
+    <header class="up_header_banner">
+        <div class="header_left_banner">
+            <a href="index.html">
+                <h3>ㅇㅈㅎ</h3>
+            </a>
+        </div>
+    </header>
+
+    <!-- 상단 nav 부분 -->
+    <nav class="up_nav">
+        <div class="nav_right_menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="portfolio.html">
+                    <li>Portfoilo</li>
+                </a>
+                <a href="skill2.html">
+                    <li>Skill</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 본문 section 과 article 부분 -->
+    <section class="desc_portfolio_section">
+        <article class="protfolio_title">
+            <h2 class="lat_title">My Skill</h2>
+        </article>
+
+        <article class="skills_row">
+            <!-- fadeIn 효과 주기 -->
+            <div class="animated fadeIn delay-.7s skills">
+                <!-- div item 으로 하나하나 div별로 사진과 제목 적어줌 -->
+                <div class="item">
+                    <img src="img/skills/html5-logo.png" alt="HTML 사진" title="HTML"><strong>HTML</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/css3-logo.png" alt="CSS 사진" title="CSS"><strong>CSS</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/javascript-logo.png" alt="Javascript 사진" title="Javascript"><strong>Javascript</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/java-logo.png" alt="JAVA 사진" title="JAVA"><strong>JAVA</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/java-logo.png" alt="JSP&Servlet 사진" title="JSP&Servlet"><strong>JSP&Servlet</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/spring-logo.png" alt="Spring 사진" title="Spring"><strong>Spring</strong>
+                </div>
+
+                <div class="item">
+                    <img src="img/skills/androidstudio-logo.jpg" alt="Android 사진" title="Android"><strong>Android</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/xcode-logo.jpg" alt="Iphone 사진" title="Iphone"><strong>Iphone</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/visual-studio-logo.png" alt="C 사진" title="C"><strong>C</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/mysql-logo.PNG" alt="Mysql 사진" title="Mysql"><strong>Mysql</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/oracle-logo.PNG" alt="Oracle 사진" title="Oracle"><strong>Oracle</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/maria-logo.png" alt="MariaDB 사진" title="MariaDB"><strong>MariaDB</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/mongo-logo.png" alt="MongoDB 사진" title="MongoDB"><strong>MongoDB</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/aws-logo.jpg" alt="AWS 사진" title="AWS"><strong>AWS</strong>
+                </div>
+                <div class="item">
+                    <img src="img/skills/linux-logo.png" alt="Linux 사진" title="Linux"><strong>Linux</strong>
+                </div>
+            </div>
+        </article>
+
+        <!-- 파이 원형 차트 쓰는 부분 -->
+        <article class="pie_skills">
+            <div class="pie_skills_container">
+                <!-- div pie_box가 1개의 원형 차트 
+                     data-percent가 채워질 퍼센트 
+                     pie_skills_chart로 아래 JS로 원형 차트 세부 설정 -->
+                <div class="pie_box">
+                    <div class="pie_skills_chart" data-percent="93">93%</div>
+                    <h2>WEB</h2>
+                </div>
+                <div class="pie_box">
+                    <div class="pie_skills_chart" data-percent="82">82%</div>
+                    <h2>MOBILE</h2>
+                </div>
+                <div class="pie_box">
+                    <div class="pie_skills_chart" data-percent="74">74%</div>
+                    <h2>DATABASE</h2>
+                </div>
+                <div class="pie_box">
+                    <div class="pie_skills_chart" data-percent="91">91%</div>
+                    <h2>AWS</h2>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- 하단 footer 부분 -->
+    <footer class="desc_footer">
+        Copyright &copy; My Website 2019
+    </footer>
+
+    <!-- 클릭 시 맨위로 보내는 아이콘 부분
+         반응형에서만 나타나게 설정하기 -->
+    <a style="display:scroll;position:fixed;bottom:20px;right:20px; font-size: 40px;" href="#" class="gototop"><i class="fas fa-arrow-alt-circle-up"></i></a>
+
+
+
+    <!-- 파이 원형 차트 JS 부분
+         위에서 지정한 div : pie_skills_chart 에 적용 -->
+    <script>
+        $(function() {
+            $('.pie_skills_chart').easyPieChart({
+                size: 180, // 파이 크기
+                barColor: '#5656fc', // 바 색깔(채워지는)
+                scaleColor: false, // 퍼센트 초점(시계 분같이) 표시 
+                lineWidth: 20, // 선 굵기
+                trackColor: '#aaaafa', // 파이 트랙 컬러(뒤부분)
+                animate: 2000 // 퍼센트 채워지는 속도
+            });
+        });
+    </script>
+
+    <!-- 스크롤하여 밑으로 어느정도 내려갔을대 사라지고 나타나는 효과 -->
+    <!-- this.scrollTop 로 스크롤바 위치를 가져와서 300보다 크면 나타나게
+         아니면 사라지게 맨위로 버튼에 효과를 준다 -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('.gototop').fadeIn();
+            } else {
+                $('.gototop').fadeOut();
+            }
+        });
+    </script>
+
+    <!-- 맨위로 버튼을 눌렀을 때, html body 쪽으로(맨위로) 
+         스르르 올라가도록 애니메이션 효과를 준다 -->
+    <script>
+        $('.gototop').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    </script>
+    
+</body>
+
+</html>
